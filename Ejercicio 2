@@ -1,0 +1,35 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		 string datos = "";
+            int edad = 0;
+            double altura = 0;
+
+            Console.WriteLine("Por favor ingrese su edad");
+            datos= Console.ReadLine();
+            edad = Convert.ToInt32(datos);
+            Console.WriteLine("Por favor ingrese su altura en metros");
+            datos = Console.ReadLine();
+            altura = Convert.ToDouble(datos);
+           
+            if (edad <= 17 && altura <= 1.7)
+            {
+                Console.WriteLine("Bienvenido al parque de diversiones");                
+            }
+            
+            else {
+                if (edad >= 18)
+                {
+                    Console.WriteLine("Su edad excede el limite permitido");
+
+
+                }
+                if (altura > 1.7) {
+                    Console.WriteLine("Su altura excede el limite permitido");
+                }
+            }   
+	}
+}
