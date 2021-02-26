@@ -1,0 +1,57 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		string num1 = "";
+		string num2 = "";
+		string num3 = "";
+		int a = 0;
+		int b = 0;
+		int c = 0;
+
+		Console.WriteLine("Escriba el numeros que desea replicar en las cadenas de texto, aabc, bca y bcbc");
+
+		Console.WriteLine("Numero a");
+	    num1= Console.ReadLine();
+		a = Convert.ToInt32(num1);
+
+
+
+		Console.WriteLine("Numero b");
+	    num2 = Console.ReadLine();
+		b = Convert.ToInt32(num2);
+
+		Console.WriteLine("Numero c");
+	    num3 = Console.ReadLine();
+		c= Convert.ToInt32(num3);
+
+
+
+		Console.WriteLine("Cadena aabc");
+
+		Console.Write(a);
+		Console.Write(a);
+		Console.Write(b);
+		Console.WriteLine(c);	
+
+		Console.WriteLine("Cadena bca");
+
+		Console.Write(b);
+		Console.Write(c);
+		Console.WriteLine(a);
+
+		Console.WriteLine("Cadena bcbc");
+
+		Console.Write(b);
+		Console.Write(c);
+		Console.Write(b);
+		Console.WriteLine(c);			
+
+
+
+
+	}  
+
+}
